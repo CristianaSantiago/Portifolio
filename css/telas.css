@@ -1,0 +1,296 @@
+:root{
+  --branco: #F5F7F8;
+  --amarelo: #F4CE14;
+  --verde-escuro: #495E57;
+  --cinza-escuro: #45474B;
+  --cinza-claro:#A9A9A9;
+}
+ /* tela ipad min width: 820px  */
+@media screen and (max-width: 1170px){
+  body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  .logo{
+    color: var(--cinza-claro);
+    font-size: 2.5rem;
+    display: flex;
+    justify-items: center;    
+  }
+  header{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+  }
+  nav{   
+    display: flex;     
+  }
+
+  ul.menu{
+    display: flex;
+    flex-direction: row;   
+    justify-items: center;
+    padding-top: .5rem;
+  }
+  header nav .menu li a {
+    font-size: 1rem;
+    font-weight: 600;
+    justify-items: center;
+  }
+  header nav .menu li a:hover{
+    color: var(--branco);
+    text-decoration:underline;
+  }
+  section h3{
+    padding-top: 2rem;
+  }
+  section h2{
+    padding-top: -1rem;
+  }
+  div.descricao{
+    margin: 2rem;
+  }
+  .descricao img {
+    margin: 1rem;
+    padding: 0;
+  }
+  .descricao p {
+    margin: 0 1rem 0 1rem;
+  }
+}
+
+ /* tela ipad min width: 768px */
+
+@media screen and (min-width: 768px) {
+    header .logo{
+      color: var(--cinza-claro);
+      font-size: 2rem;
+      max-width: 150px;
+      max-height: 10px;      
+    }
+    header{
+      display: flex;
+      flex-direction: row;
+      text-align: center;
+    }
+    .menu{
+      display: flex;
+      flex-direction: row;
+      padding-top: .5rem;
+      justify-content: center;
+      margin-top: 1rem;
+    }
+    header nav .menu li a {
+      font-size: 1rem;
+      font-weight: 600;
+    }
+    header nav .menu li a:hover{
+      color: var(--amarelo);
+      text-decoration: underline;
+    }
+    section h3{
+      padding-top: 2rem;
+    }
+    section h2{
+      padding-top: 1rem;
+    }
+    img.foto_perfil {
+      margin: 1rem;
+      padding: 0;
+    }
+    div.descricao_bio{
+     padding-top: 4rem;
+     font-size: medium;
+     font-weight: 600;
+     
+    }
+    .sobre_habilidades{
+      display: flex;
+      flex-direction: column;
+      padding-top: 8rem;
+    }
+    .sobre_mim_txt{
+      text-align: center;
+      margin-left: 18rem;
+    }
+  
+    .habilidades{
+      margin-top: 4rem;
+    }
+  
+    .titulo-portifolio{
+      padding-top: 10rem;
+    }
+    div.cards{
+      display: flex;
+      flex-direction:row;
+      gap: 30px;
+      padding: 0px;
+      margin-bottom: 2rem;
+    }
+
+    footer{
+      padding: 0px;
+      margin: 0px;
+    }
+    footer h2{
+      padding-top: 10rem;
+    }
+    footer ul {
+      margin-top: -5rem;
+      margin-bottom: -5rem;
+    }
+
+    h2#contatos {
+      padding: 0px;
+      margin: 0px;
+    }
+
+    ul.contatos-lista{
+     padding: 1rem;
+    }
+    .img-contatos{
+      width: 60px;
+      height: 5vh;
+    }
+    .icons_text{
+      margin: 5rem;
+      font-size: 1.5rem;
+    }
+} 
+
+/* tela ipad min width: 430px */
+
+@media screen and (max-width: 600px) {
+  body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  header{
+    display: block;    
+  }
+
+  header  div.logo{
+   color: var(--cinza-claro);
+   text-align: center;  
+   justify-content: center; 
+  } 
+
+  header nav {
+    display:flex;
+    flex-direction:row;
+    align-items: center;    
+    position: static;     
+    justify-content: center;  
+  }
+  
+  ul.menu {
+    position: static;          
+    background-color: #F4CE14;
+    flex-wrap: wrap; 
+    width: 500px;
+    border-radius: 10px;
+  }
+
+  header nav .menu li a {    
+    color: var(--cinza-escuro);
+    font-weight: 600;   
+    align-items:center;
+    justify-content: space-evenly;
+  }
+
+  .home h3{
+    padding-top: 6rem;
+    padding-left: .5rem;
+    margin-top: 8rem;
+  }
+
+  .home h2{
+    padding-left: .5rem;
+    font-size: 2.5rem ;
+  }  
+
+  img.foto_perfil{    
+   margin-left: 2rem;
+  }
+
+  div.descricao{
+    display: flex;
+    flex-direction: column;  
+    margin-top: -2rem;      
+  }
+
+  .descricao_bio{
+    text-align: justify;
+    margin: 2.5rem;
+  }
+
+  p{
+    margin-top: 1rem;
+    padding-top: .5rem;
+  }
+ .container{
+    display: flex;
+    flex-direction: column;
+  }
+  .sobre_mim_txt{
+    text-align: center;
+  }
+  .habilidades{
+    margin-top: 1rem;
+  }
+  /* .titulo-portifolio{
+    margin-top: .5rem;
+  } */
+  .titulo-portifolio{
+    padding: 1.5rem;
+    margin-top: -5rem ;
+  }
+  
+  .cards{
+    display: flex;
+    flex-direction:column;
+    padding-left: 4rem;
+    margin-bottom: 2rem;
+    gap: 30px;
+  }
+  .card-title {
+    text-align: center;
+  }
+  .card-text{
+    text-align: center;
+    justify-items: center;
+    padding: 0px;
+  }
+  section .container_portifolio{
+    padding: 0px;
+    margin: 0px;
+  }
+  footer{
+    margin: 0px;
+    padding: 0px;
+  }
+  footer h2 {
+    margin: 0px;
+    padding: 0px;
+  }
+ .contatos-lista{
+    padding: 0px;
+    margin: 0px;
+  }
+  ul.contatos-lista  {
+    height: 40px;
+  }
+  .img-contatos{
+    width: 40px;
+    height: 40px;
+  }
+
+  .botao-inicio{
+  position: sticky;
+  bottom: 10px;
+  z-index: 3;  
+  }
+}
